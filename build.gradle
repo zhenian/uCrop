@@ -22,6 +22,26 @@ buildscript {
     }
 }
 
+ext {
+
+    // androidX
+    appcompat = '1.1.0-beta01'
+    material = '1.1.0-alpha07'
+    legacySupportV4 = '1.0.0'
+    legacySupportV13 = '1.0.0'
+    cardview = '1.0.0'
+    gridlayout = '1.0.0'
+    core = '1.0.0'
+    browser = '1.0.0'
+    exifinterface = '1.0.0'
+    annotation = '1.1.0'
+    //annotation = '1.1.0-rc01'
+    recyclerview = '1.1.0-alpha06'
+    espressoCore = '3.1.0'
+
+}
+
+
 def isReleaseBuild() {
     return version.contains("SNAPSHOT") == false
 }
